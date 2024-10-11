@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    scroll-behavior: smooth;
+    font-style: normal;
+}
+
+
+h1{
+    font-family: "Mukta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+ul{
+    margin-top: 30px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
+    align-items: center;
+}
+
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    color: #fff; /*color the link*/
+    text-decoration: none; /*removes the line under the link*/
+    font-size: 18px;
+    position: relative;
+}
+
+.content{
+    margin-left: 100px;
+}
+
+.content li{
+    position: relative;
+}
+
+.content a {
+    text-decoration: none;
+    color: #000000; /* Black color for the text */
+    padding-bottom: 5px; /* Space for the underline */
+    
+}
+
+.content a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6200ea; /* Purple underline color */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease; /*The transition will take .3 sec to complete*/ 
+}
+
+.content a:hover::before {
+    transform: scaleX(1); /*It is the width of the line under the links when we place the cursor on it*/
+    transform-origin: right; /*starts the transition form the right*/
+}
+
+.content a:hover {
+    color: #6200ea; /* Optional: change text color on hover */
+}
+
+header{
+    height: 100px;
+    background-color: #eee5fb;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.head{
+    margin-left: 100px;
+    color: #6200ea;
+}
+
+/*-----------------------------------------------*/
+
+
+
+.para{
+    margin-top: 200px;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    color: #6200ea;
+}
+
+.person{
+    width: 300px;
+    height: 300px;
+    background-color: #6a0dad; /* Solid purple background */
+    position: relative;
+    border-radius: 50px; /* Curved edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 1000px;
+    margin-top: -180px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.logo{
+    display: flex;
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+#l{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#l:hover{
+    color: #6a0dad;
+}
+
+#l:active{
+    color: #bf9def;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+/*------------------------------------------------*/
+
+#aboutMe{
+    background: #eee5fb;
+    margin-top: 300px; 
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    border-radius: 40px;
+    justify-content: space-evenly;
+}
+
+.ab{
+    margin-left: 800px;
+    color: #6a0dad;
+}
+
+.he{
+    margin-left: 800px;
+    margin-top: 10px;
+}
+
+
+.pa{
+    margin-top: 30px;
+    margin-left: 800px;
+    margin-right: 200px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100
+}
+
+
+
+.bu button {
+    background-color: #6a0dad; /* Purple background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 16px; /* Increase font size */
+    border-radius: 40px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 800px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.bu button:hover {
+    background-color: #7b1fa2; /* Slightly lighter purple on hover */
+}
+
+.bu button:active{
+    background-color: #bf9def;
+}
+
+.im2{
+    width: 300px;
+    height: 450px;
+    background-color: #6a0dad;
+    margin-top: -420px;
+    margin-left: 300px;
+    border-radius: 2000px;
+    box-shadow: 10px 10px 10px black;
+}
+
+/*---------------------------------------------------------*/
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #6a0dad;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.ss{
+    margin-top: 50px;
+}
+
+.fa-brands{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.fa-solid{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.sk{
+    margin-left: 50px;
+}
+
+.pu{
+    margin-left: 50px;
+}
+
+.ht{
+    margin-right: 800px;
+    background-color: #eee5fb;
+    height: 400px;
+    width: 25%;
+    margin-left: 200px;
+    border-radius: 40px;
+}
+
+.ph{
+
+    margin-top: 50px;
+    color: black;
+    font-weight: lighter;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.ja{
+    margin-top: -400px;
+    background-color: #eee5fb;
+    height: 400px;
+    width: 25%;
+    margin-left: 600px;
+    border-radius: 40px;
+}
+
+.cs{
+    margin-top: -400px;
+    margin-right: 800px;
+    background-color: #eee5fb;
+    height: 400px;
+    width: 25%;
+    margin-left: 1000px;
+    border-radius: 40px;
+}
+
+/*line 2 skill*/
+.py{
+    margin-top: 50px;
+    margin-right: 800px;
+    background-color: #eee5fb;
+    height: 400px;
+    width: 25%;
+    margin-left: 400px;
+    border-radius: 40px;  
+}
+
+.ml{
+    margin-top: -400px;
+    margin-right: 800px;
+    background-color: #eee5fb;
+    height: 400px;
+    width: 25%;
+    margin-left: 800px;
+    border-radius: 40px; 
+}
+
+/*-----------------------------------------------------*/
+
+.beauty{
+    background-color: #eee5fb;
+    margin-top: 100px;
+    height: 200px;
+    border-radius: 40px;
+    text-align: center;
+    padding: 50px;
+    color: #6a0dad;
+}
+
+.bc button {
+    background-color: #6a0dad; /* Purple background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 16px; /* Increase font size */
+    border-radius: 40px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 50px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.bc button:hover {
+    background-color: #7b1fa2; /* Slightly lighter purple on hover */
+}
+
+.bc button:active{
+    background-color: #bf9def;
+}
+
+/*------------------------------------------------------*/
+
+#experience{
+    margin-top: 200px;
+    text-align: center;
+    color: #6a0dad;
+}
+
+/*---------------------------------------------------------*/
+
+#contact{
+    margin-top: 300px;
+    background-color: #eee5fb;
+    height: 500px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px   ;
+}
+
+
+.inp{
+    margin-left: -800px;
+    border-radius: 40px;
+    padding: 10px 20px;
+    border: 2px solid #6a0dad;
+    width: 400px;
+}
+
+#i{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#i:hover{
+    color: #6a0dad;
+}
+
+#i:active{
+    color: #bf9def;
+}
+
+.bch {
+    background-color: #6a0dad; /* Purple background color */
+    color: white; 
+    border: none; 
+    padding: 8px 20px; 
+    font-size: 16px; 
+    border-radius: 40px; 
+    cursor: pointer; 
+    margin-top: -290px;
+    margin-left: -120px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.bch:hover {
+    background-color: #7b1fa2; /* Slightly lighter purple on hover */
+}
+
+.bch:active{
+    background-color: #bf9def;
+}
+
+.details{
+    margin-top: -30px;
+    margin-left: 600px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.e2m{
+    margin-top: 20px;
+    margin-left: 800px;
+    font-weight: 300;
+}
+
+.p2m{
+    margin-top: 10px;
+    margin-left: 680px;
+    font-weight: 300;
+    font-size: 15px;
+}
